@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'ESTMusicPlayerPodLib_Example' do
+  pod 'ESTMusicPlayerPodLib', :path => '../'
+
+  target 'ESTMusicPlayerPodLib_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
