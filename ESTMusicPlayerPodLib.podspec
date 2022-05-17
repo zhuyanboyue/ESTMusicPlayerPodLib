@@ -21,22 +21,29 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/zhuyanboyue@163.com/ESTMusicPlayerPodLib'
+  s.homepage         = 'https://github.com/zhuyanboyue/ESTMusicPlayerPodLib'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'zhuyanboyue@163.com' => 'mac.zhou@touchgui.com' }
-  s.source           = { :git => 'https://github.com/zhuyanboyue@163.com/ESTMusicPlayerPodLib.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/zhuyanboyue/ESTMusicPlayerPodLib.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.0'
 
-  s.source_files = 'ESTMusicPlayerPodLib/Classes/**/*'
+  s.source_files = 'ESMusicPodLib/Enesco.h'
+  s.subspec 'Enesco' do |ss|
+    ss.source_files = 'ESMusicPodLib/Enesco/**/*'
+  end
   
-  # s.resource_bundles = {
-  #   'ESTMusicPlayerPodLib' => ['ESTMusicPlayerPodLib/Assets/*.png']
-  # }
+  s.resource = 'ESMusicPodLib/ESMusicPodLib.bundle'
+  s.prefix_header_file = 'ESMusicPodLib/Enesco.h'
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+
+  s.frameworks = 'UIKit'
+  s.dependency 'DOUAudioStreamer', '0.2.11'
+  s.dependency 'SDWebImage'
+  s.dependency 'GVUserDefaults'
+  s.dependency 'MBProgressHUD'
+  s.dependency 'Mantle', '1.5.5'
+  s.dependency 'AFNetworking', '~> 2.0'
 end

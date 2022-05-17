@@ -1,0 +1,22 @@
+{
+  "name": "ESTMusicPlayerPodLib",
+  "version": "0.1.0",
+  "summary": "A short description of ESTMusicPlayerPodLib.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/zhuyanboyue@163.com/ESTMusicPlayerPodLib",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "zhuyanboyue@163.com": "mac.zhou@touchgui.com"
+  },
+  "source": {
+    "git": "https://github.com/zhuyanboyue@163.com/ESTMusicPlayerPodLib.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "ESTMusicPlayerPodLib/Classes/**/*"
+}

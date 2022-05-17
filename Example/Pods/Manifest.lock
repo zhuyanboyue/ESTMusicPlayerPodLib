@@ -1,0 +1,16 @@
+PODS:
+  - ESTMusicPlayerPodLib (0.1.0)
+
+DEPENDENCIES:
+  - ESTMusicPlayerPodLib (from `../`)
+
+EXTERNAL SOURCES:
+  ESTMusicPlayerPodLib:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ESTMusicPlayerPodLib: da6f3bca56ffada586b938e82a310fda84462b81
+
+PODFILE CHECKSUM: ebdbde22c1a10ce41fc7059a2370098b26ca44ec
+
+COCOAPODS: 1.11.2

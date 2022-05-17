@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="musicListCell" rowHeight="57" id="Z0Y-Ur-s4N" userLabel="Music List Cell" customClass="MusicListCell">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="57"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Z0Y-Ur-s4N" id="tb9-Oc-KM7">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="57"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="raG-IG-bvX">
+                        <rect key="frame" x="0.0" y="0.0" width="40" height="57"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="Z2T-rm-fHc"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.65490196079999996" green="0.65490196079999996" blue="0.65490196079999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AMG-D2-AOq">
+                        <rect key="frame" x="40" y="10" width="364" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="In0-nM-v21"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.53725490200000003" green="0.53725490200000003" blue="0.53725490200000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Onh-mX-HFZ">
+                        <rect key="frame" x="40" y="31" width="364" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="0Xg-mZ-x5r"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" red="0.70196078429999997" green="0.70196078429999997" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wxu-Yh-fnu" customClass="NAKPlaybackIndicatorView">
+                        <rect key="frame" x="0.0" y="0.0" width="40" height="57"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="qyB-Oj-rC8"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DwB-at-08M">
+                        <rect key="frame" x="294" y="0.0" width="120" height="57"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="120" id="kbL-B8-IhL"/>
+                        </constraints>
+                        <color key="tintColor" systemColor="systemRedColor"/>
+                        <buttonConfiguration key="configuration" style="plain">
+                            <attributedString key="attributedTitle">
+                                <fragment content="Set as ringtone">
+                                    <attributes>
+                                        <font key="NSFont" size="13" name="PingFangSC-Semibold"/>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
+                        </buttonConfiguration>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="AMG-D2-AOq" secondAttribute="trailing" constant="10" id="4KR-ia-d2c"/>
+                    <constraint firstAttribute="bottom" secondItem="raG-IG-bvX" secondAttribute="bottom" id="9Ol-9T-9rY"/>
+                    <constraint firstItem="Wxu-Yh-fnu" firstAttribute="top" secondItem="tb9-Oc-KM7" secondAttribute="top" id="9ub-eg-g7R"/>
+                    <constraint firstAttribute="bottom" secondItem="Wxu-Yh-fnu" secondAttribute="bottom" id="ClN-Kj-fRl"/>
+                    <constraint firstItem="AMG-D2-AOq" firstAttribute="leading" secondItem="raG-IG-bvX" secondAttribute="trailing" id="EKf-YQ-UKo"/>
+                    <constraint firstAttribute="trailing" secondItem="DwB-at-08M" secondAttribute="trailing" id="Jnk-SE-S3D"/>
+                    <constraint firstItem="Onh-mX-HFZ" firstAttribute="leading" secondItem="raG-IG-bvX" secondAttribute="trailing" id="LuB-3t-Bau"/>
+                    <constraint firstAttribute="bottom" secondItem="DwB-at-08M" secondAttribute="bottom" id="OsQ-X3-6Ha"/>
+                    <constraint firstItem="raG-IG-bvX" firstAttribute="top" secondItem="tb9-Oc-KM7" secondAttribute="top" id="Yry-4Q-n9g"/>
+                    <constraint firstItem="DwB-at-08M" firstAttribute="top" secondItem="tb9-Oc-KM7" secondAttribute="top" id="cWq-G8-GqB"/>
+                    <constraint firstItem="raG-IG-bvX" firstAttribute="leading" secondItem="tb9-Oc-KM7" secondAttribute="leading" id="cfe-n7-9X9"/>
+                    <constraint firstItem="Wxu-Yh-fnu" firstAttribute="leading" secondItem="tb9-Oc-KM7" secondAttribute="leading" id="jWp-k6-7fh"/>
+                    <constraint firstItem="Onh-mX-HFZ" firstAttribute="top" secondItem="AMG-D2-AOq" secondAttribute="bottom" id="uAu-2N-eVx"/>
+                    <constraint firstAttribute="trailing" secondItem="Onh-mX-HFZ" secondAttribute="trailing" constant="10" id="vQq-zp-ZNy"/>
+                    <constraint firstItem="AMG-D2-AOq" firstAttribute="centerY" secondItem="tb9-Oc-KM7" secondAttribute="centerY" constant="-8" id="vcj-S9-e5a"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="cellRightBtn" destination="DwB-at-08M" id="gtA-Gd-zTm"/>
+                <outlet property="musicArtistLabel" destination="Onh-mX-HFZ" id="ilm-nm-R5e"/>
+                <outlet property="musicIndicator" destination="Wxu-Yh-fnu" id="QyQ-pF-P6m"/>
+                <outlet property="musicNumberLabel" destination="raG-IG-bvX" id="QeF-cz-uLf"/>
+                <outlet property="musicTitleLabel" destination="AMG-D2-AOq" id="0Qe-ze-shj"/>
+            </connections>
+            <point key="canvasLocation" x="-30.434782608695656" y="134.26339285714286"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

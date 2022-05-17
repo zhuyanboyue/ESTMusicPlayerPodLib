@@ -1,0 +1,6 @@
+framework module ESTMusicPlayerPodLib {
+  umbrella header "ESTMusicPlayerPodLib-umbrella.h"
+
+  export *
+  module * { export * }
+}
